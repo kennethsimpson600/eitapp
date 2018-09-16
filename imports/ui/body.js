@@ -25,6 +25,12 @@ Template.body.events({
      	 throw new Meteor.Error('not-authorized');
     }
 
+    // form validation
+    if(fname == "" || lname == "" || gender == "" || dateBirth == ""){
+    	alert("Fields Required!");
+        return true;
+    }
+
 
 	// Insert a task into the collection
 	Eits.insert({
