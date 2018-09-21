@@ -83,8 +83,3 @@ Template.body.events({
 		});
 	}
 });
-
-
-Template.mytemplate.rendered=function() {
-	$('#my-datepicker').datepicker();
-}
